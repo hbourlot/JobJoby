@@ -1,0 +1,1 @@
+SKILLS = ["Python", "SQL", "Docker", "React"]
