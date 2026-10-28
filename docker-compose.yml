@@ -13,9 +13,28 @@ services:
             POSTGRES_USER: ${POSTGRES_USER}
             POSTGRES_PASSWORD_FILE: /run/secrets/postgres_password
 
+    pgadmin:
+        image: dpage/pgadmin4:9.18
+        container_name: pgadmin-jobjoby
+        environment:
+            PGADMIN_DEFAULT_EMAIL: ${PGADMIN_EMAIL}
+            PGADMIN_DEFAULT_PASSWORD_FILE: /run/secrets/pgadmin_password
+            PGADMIN_CONFIG_SERVER_MODE: "False"
+        secrets:
+            - pgadmin_password
+        ports:
+            - "3024:80"
+        volumes:
+            - pgadmin_data:/var/lib/pgadmin
+        depends_on:
+            - postgres
+
 secrets:
     postgres_password:
         file: ./.secrets/postgres_password.txt
+    pgadmin_password:
+        file: ./.secrets/pgadmin_password.txt
 
 volumes:
     postgres_data:
+    pgadmin_data:

@@ -1,11 +1,7 @@
 from sqlalchemy.orm import Session
 
 from app.db import get_engine
-from app.models.base import Base
-from app.models.job import Job
-from app.models.skills import Skill
-from app.models.language import Language
-
+from app.models import Base, Job  # , Skill, Language
 from sqlalchemy import Engine
 
 

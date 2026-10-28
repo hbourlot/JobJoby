@@ -9,7 +9,6 @@ FILE_PATH = Path(__file__).resolve().parents[2] / ".secrets" / "postgres_passwor
 
 
 def get_password(f_path: Path) -> str:
-    print(f_path)
     return f_path.read_text().strip()
 
 
