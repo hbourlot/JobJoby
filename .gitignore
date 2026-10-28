@@ -1,0 +1,6 @@
+CLAUDE.md
+.vscode/
+.venv/
+__pycache__/
+.env
+.secrets/
