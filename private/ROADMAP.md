@@ -10,8 +10,8 @@ I tick the boxes as I go.
 - [x] Project structure: `backend/` (`app/`, `tests/`, `requirements.txt`, `Dockerfile`), plus `.gitignore` and `.env.example` at the root
 - [x] `docker-compose.yml` with PostgreSQL (+ pgAdmin, optional)
 - [x] SQLAlchemy models: `companies`, `jobs`, `skills`, `job_skills`, `languages`, `job_languages`, `applications`
-- [ ] Script that creates the tables and inserts one test job
-- [ ] README with how to run it
+- [x] Script that creates the tables and inserts one test job
+- [x] README with how to run it
 
 ## Phase 2 – Extraction
 - [ ] Skill list (Python, SQL, Docker, React, ...) kept in a file, not hard-coded

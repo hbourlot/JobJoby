@@ -4,4 +4,4 @@ CLAUDE.md
 __pycache__/
 .env
 .secrets/
-personal/
+private/
